@@ -10,6 +10,8 @@ This is a *last minute* **prototype/demo** — a proof of concept for the full a
   <img src="slide3.png" height="200">
 </p>
 
+Live demo: https://intelagense.github.io/loadingsoon/
+
 ## How It Works
 
 - Click the hamburger menu to open settings.
@@ -18,7 +20,7 @@ This is a *last minute* **prototype/demo** — a proof of concept for the full a
 
 ### Slide Format
 
-Use markdown sections with headings for each type of content. Questions and answers should be separated with a pipe character "|"
+Use markdown sections with headings for each type of content. Questions and answers should be separated with a pipe character. "|"
 
 ```markdown
 ## trivia
