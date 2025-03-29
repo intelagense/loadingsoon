@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pre-Show Loop</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <button class="menu-toggle" onclick="toggleSettings()">☰</button>
+    <main>
+      <div id="settings">
+        <label
+          >Start Time:
+          <input type="datetime-local" id="startTimeInput" />
+        </label>
+        <label>Seed Data:</label>
+        <textarea id="seedData"></textarea>
+        <button id="startShow">Start</button>
+        <button id="fillDefaults">Fill with default data</button>
+      </div>
+    </main>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+  background: #111;
+  color: white;
+  font-family: sans-serif;
+  overflow: hidden;
+}
+main {
+  height: 100vh;
+}
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  font-size: 3rem;
+  padding: 2rem;
+  opacity: 0;
+  transition: opacity 5s ease-in-out, background-color 5s ease-in-out;
+  color: white !important;
+  z-index: 0;
+}
+.slide.active {
+  opacity: 1;
+  z-index: 2;
+}
+.slide.outgoing {
+  z-index: 1;
+}
+.slide h4 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: white;
+}
+.slide h2 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-top: 0;
+  color: white;
+}
+.slide p,
+.slide em {
+  font-size: 2rem;
+  color: white;
+}
+.menu-toggle {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  z-index: 10;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+}
+#settings {
+  display: none;
+  position: absolute;
+  top: 3.5rem;
+  left: 1rem;
+  background: #222;
+  padding: 1rem;
+  border-radius: 8px;
+  z-index: 20;
+  color: white;
+}
+#settings.show {
+  display: block;
+}
+#settings label,
+#settings input,
+#settings textarea,
+#settings button {
+  color: white;
+}
+textarea {
+  min-height: 200px;
+  font-family: monospace;
+  background: #111;
+  color: white;
+}
+input[type="datetime-local"] {
+  background: #111;
+  color: white;
+}
